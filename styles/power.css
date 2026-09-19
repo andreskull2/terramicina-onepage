@@ -1,0 +1,88 @@
+.power-section {
+    background-color: #edf3ff;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.power-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.power-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 580px;
+}
+
+.power-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.badge-nova-embalagem {
+    position: absolute;
+    top: 35px;
+    left: 180px;
+    color: var(--white, #FFFFFF);
+    font-family: var(--ff-arimo, sans-serif);
+    font-weight: var(--fw-bold, 700);
+    font-size: 0.875rem; /* 14px */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.power-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.power-content h2 {
+    font-size: 42px;
+    font-weight: var(--fw-bold, 700);
+    color: var(--blue, #0856B6);
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.power-content p {
+    font-size: 16px;
+    color: var(--blue, #0856B6);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid var(--orange, #FFA800);
+    color: var(--blue, #0856B6);
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    background-color: var(--orange, #FFA800);
+    color: var(--white, #FFFFFF);
+}
+
+@media (max-width:768px) {
+    .power-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .power-content h2 {
+        font-size: 32px;
+    }
+}
