@@ -18,4 +18,16 @@
     --green-brand:#7FB050;
     --red:#D13827;
     --gray-brand:#8B8B8B;
+
+    /* Typography */
+    --ff-arimo: 'Arimo', sans-serif;
+
+    /* Tamanhos convertidos do PSD (Desktop) */
+    --fs-h1: 4rem; /* ˜64px */
+    --fs-h2: 3rem; /* 48px */
+    --fs-xxl: 2.5rem; /* 40px */
+    --fs-xl: 2.1rem; /* ˜34px */
+    --fs-lg: 1.5rem; /* 24px */
+    --fs-base: 1.125rem; /* 18px */
+    --fs-sm: 1rem; /* 16px */
 }

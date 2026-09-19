@@ -1,0 +1,49 @@
+/* Estilos do Cabeçalho e Menu */
+.site-header {
+    width: 100%;
+    background-color: var(--blue-brand, #0856B6); /* Usando o azul da identidade visual */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-lg, 1.5rem); /* 24px */
+    font-weight: var(--fw-bold, 700);
+    color: var(--white, #FFFFFF);
+    text-decoration: none;
+}
+
+.logo sup {
+    font-size: 0.75rem; 
+    vertical-align: super;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-sm, 1rem); /* 16px */
+    color: var(--white, #FFFFFF);
+    font-weight: var(--fw-regular, 400);
+    transition: opacity 0.3s ease;
+
+}
