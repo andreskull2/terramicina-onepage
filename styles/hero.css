@@ -1,17 +1,26 @@
 .hero-section {
     width: 100%;
-    background-color: #e4edff; /* Cor de fundo da seção hero */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; /* Centraliza a faixa de 1440px na tela se o monitor for maior */
+    overflow: hidden;
 }
 
 .hero-container {
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1440px; /* Trava estritamente no grid de 1440px */
     margin: 0 auto;
-    padding-top: 65px; 
-
+    padding-top: 65px;
+    padding-left: 0px;  /* Mesma prumada de 100px das outras seções */
+    padding-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-container img {
     width: 100%;
+    max-width: 100%; /* Garante que ela respeite o limite exato do container sem vazar */
     height: auto;
-    display:block;
+    display: block;
 }

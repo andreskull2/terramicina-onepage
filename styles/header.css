@@ -1,17 +1,19 @@
-/* Estilos do Cabeçalho e Menu */
 .site-header {
     width: 100%;
-    background-color: var(--blue-brand, #0856B6); /* Usando o azul da identidade visual */
+    background-color: var(--blue-brand, #0856B6);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center; /* Garante que o header de 1440px fique centralizado em telas maiores */
 }
 
 .header-container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1440px; /* Alterado de 1200px para 1440px */
     margin: 0 auto;
-    padding: 1.2rem 2rem;
+    padding: 1.2rem 100px; /* Exatamente 100px de padding lateral de cada lado */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,5 +47,4 @@
     color: var(--white, #FFFFFF);
     font-weight: var(--fw-regular, 400);
     transition: opacity 0.3s ease;
-
 }

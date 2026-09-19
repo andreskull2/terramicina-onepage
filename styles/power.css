@@ -1,17 +1,24 @@
+/* A section tem que ter largura total da tela, sem limitar caixa nenhuma */
 .power-section {
-    background-color: #edf3ff;
-    padding: 80px 0;
+    background-color: #ffffff;
+    width: 100%;
+    display: block;
+    padding: 0 0;
     overflow: hidden;
 }
 
+/* O container interno gerencia a grade de 1440px e encosta a imagem na margem esquerda de 100px */
 .power-container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    padding: 0 20px;
+    gap: 4rem;
+    padding-left: 0px; /* Encosta a imagem exatamente na linha guia esquerda */
+    padding-right: 300px; /* Respiro direito */
+    background-color: #edf3ff;
 }
 
 .power-image-wrapper {
@@ -28,44 +35,53 @@
 
 .badge-nova-embalagem {
     position: absolute;
-    top: 35px;
-    left: 180px;
+    top: 10%;
+    left: 8%;
+    z-index: 2;
     color: var(--white, #FFFFFF);
     font-family: var(--ff-arimo, sans-serif);
     font-weight: var(--fw-bold, 700);
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    background: rgba(0, 0, 0, 0.15);
-    padding: 4px 10px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.35rem 0.85rem;
     border-radius: 4px;
+    backdrop-filter: blur(4px);
 }
 
 .power-content {
     flex: 1;
     max-width: 500px;
+    font-family: var(--ff-arimo, sans-serif);
 }
 
 .power-content h2 {
-    font-size: 42px;
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-xxl, 2.5rem);
     font-weight: var(--fw-bold, 700);
     color: var(--blue, #0856B6);
     line-height: 1.15;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 .power-content p {
-    font-size: 16px;
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-sm, 1rem);
     color: var(--blue, #0856B6);
     line-height: 1.6;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
 }
 
 .btn-outline {
-    display: inline-block;
-    padding: 12px 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0.75rem 2rem;
     border: 2px solid var(--orange, #FFA800);
     color: var(--blue, #0856B6);
+    font-family: var(--ff-arimo, sans-serif);
     font-weight: 600;
     border-radius: 30px;
     text-decoration: none;
@@ -77,12 +93,13 @@
     color: var(--white, #FFFFFF);
 }
 
-@media (max-width:768px) {
+@media (max-width: 1024px) {
     .power-container {
         flex-direction: column;
-        gap: 40px;
+        padding: 4rem 1.25rem;
+        gap: 2.5rem;
     }
     .power-content h2 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
