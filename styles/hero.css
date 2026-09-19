@@ -1,0 +1,17 @@
+.hero-section {
+    width: 100%;
+    background-color: #e4edff; /* Cor de fundo da seção hero */
+}
+
+.hero-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 65px; 
+
+}
+
+.hero-container img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
