@@ -1,0 +1,189 @@
+/* Seção geral com fundo branco */
+.video-section {
+    background-color: var(--white, #FFFFFF);
+    width: 100%;
+    display: block;
+    padding: 6rem 0;
+    
+}
+
+/* Container principal de 1440px com respiros laterais */
+.video-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+/* Bloco 1: Cabeçalho centralizado */
+.video-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-header h2 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 2.75rem;
+    font-weight: var(--fw-bold, 700);
+    color: var(--blue, #0856B6);
+    margin-bottom: 0.75rem;
+}
+
+.video-header p {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.25rem;
+    color: var(--blue, #0856B6);
+    line-height: 1.5;
+}
+
+/* Base comum para os cards de vídeo */
+.video-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #1A202C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Camada de filtro escuro global */
+.video-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.35); 
+    z-index: 1; 
+    pointer-events: none; 
+}
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Botão de Play Limpo */
+.play-button {
+    position: absolute;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Bloco 2: Vídeo Hero Principal */
+.video-hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-video {
+    width: 80%; 
+    max-width: 1000px; 
+    height: 440px; 
+    margin: 0 auto; 
+}
+
+.main-video .play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-video .play-button img,
+.main-video .play-button svg {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+/* Bloco 3: Grid Inferior de 2 Colunas */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem; 
+    width: 80%;  
+    margin: 0 auto;
+}
+
+/* Cards Secundários Ajustados com a Barrinha Laranja */
+.secondary-video {
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 2.5rem;
+    position: relative;
+}
+
+/* Gradiente escuro para legibilidade */
+.secondary-video::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.1) 15%, rgba(0,0,0,0.85) 85%);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Botão de play */
+.secondary-video .play-button {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin-bottom: 1.25rem;
+    z-index: 3;
+}
+
+.secondary-video .play-button img,
+.secondary-video .play-button svg {
+    width: 52px;
+    height: 52px;
+    display: block;
+}
+
+/* Caixa de texto com a barrinha laranja vertical na lateral esquerda */
+.secondary-video .video-card-content {
+    position: relative;
+    z-index: 3;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem; /* Cria o respiro necessário para a barrinha não colar no texto */
+    border-left: 4px solid #FFA800; /* A barrinha laranja institucional */
+}
+
+.secondary-video .video-card-content h3 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 2rem;
+    font-weight: var(--fw-base, 400);
+    color: #FFA800;
+    margin-bottom: 0.35rem;
+    line-height: 1.2;
+}
+
+.secondary-video .video-card-content p {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-md, 1.25rem);
+    color: #FFFFFF;
+    margin: 0;
+    line-height: 1.4;
+    opacity: 0.95;
+}
