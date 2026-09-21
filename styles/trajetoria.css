@@ -1,0 +1,75 @@
+.trajetoria-section {
+    background-color: #ffffff;
+    width: 100%;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+}
+
+.trajetoria-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 100px; /* Encosta a imagem exatamente na linha guia esquerda */
+    padding-right: 0px; /* Respiro direito */
+    background-color: var(--blue-2, #002975);
+}
+
+.trajetoria-content {
+    flex: 1;
+    max-width: 520px;
+    font-family: var(--ff-arimo, sans-serif);
+}
+
+.trajetoria-content h2 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-xxl, 2.5rem);
+    font-weight: var(--fw-bold, 700);
+    color: var(--white, #FFFFFF);
+    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trajetoria-content p {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: var(--fs-base, 1.125rem);
+    color: var(--white, #FFFFFF);
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+}
+
+.trajetoria-content p.highlight-text {
+    color: var(--orange, #FFA800);
+    font-weight: var(--fw-bold, 700);
+}
+
+.trajetoria-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 680px;
+}
+
+.trajetoria-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .trajetoria-container {
+        flex-direction: column-reverse;
+        padding: 4rem 1.25rem;
+        gap: 2.5rem;
+    }
+    .trajetoria-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .trajetoria-image-wrapper {
+        max-width: 100%;
+    }
+}
