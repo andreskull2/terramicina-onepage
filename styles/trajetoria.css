@@ -16,7 +16,7 @@
     gap: 4rem;
     padding-left: 100px; /* Encosta a imagem exatamente na linha guia esquerda */
     padding-right: 0px; /* Respiro direito */
-    background-color: var(--blue-2, #002975);
+    background-color: var(--blue-1, #093995);
 }
 
 .trajetoria-content {

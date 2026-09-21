@@ -1,0 +1,86 @@
+.authority-bar {
+    background-color: var(--white, #FFFFFF);
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.authority-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-left: 100px; /* Encosta a imagem exatamente na linha guia esquerda */
+    padding-right: 100px; /* Respiro direito */
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: var(--blue-2, #002975);
+}
+
+.authority-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.authority-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authority-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.authority-text {
+    font-family: var(--ff-arimo, sans-serif);
+}
+
+.authority-text h3 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 2.25rem;
+    font-weight: var(--fw-bold, 700);
+    color: var(--orange, #FFA800);
+    line-height: 1.15;
+    margin-bottom: 0.35rem;
+}
+
+.authority-text p {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.125rem;
+    color: var(--white, #FFFFFF);
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .authority-bar {
+        padding: 3rem 0;
+    }
+
+    .authority-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 1.25rem;
+        gap: 2.5rem;
+    }
+
+    .authority-text h3 {
+        font-size: 1.75rem;
+    }
+
+    .authority-text p {
+        font-size: 1rem;
+    }
+}
