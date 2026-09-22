@@ -1,0 +1,119 @@
+.management-section {
+    background-color: var(--white, #FFFFFF);
+    width: 100%;
+    display: block;
+    padding: 0 0;
+}
+
+/* Container de 1440px mantendo os respiros laterais padrão */
+.management-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    background-color: var(--orange, #FFA800);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+/* Cabeçalho centralizado */
+.management-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.management-header h2 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 2.75rem; /* ~44px */
+    font-weight: var(--fw-bold, 700);
+    color: #FFFFFF;
+}
+
+/* Lista de Cards Compridos travada na mesma proporção mestra (80%) */
+.management-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estrutura Base de Cada Card Longo */
+.management-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o card em duas colunas perfeitas (Imagem / Texto) */
+    background-color: #1A202C; /* Tom escuro elegante padrão dos cards */
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 240px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Inversão em zigue-zague para os cards pares (.reverse) */
+.management-card.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Caixa de Imagem do Card */
+.card-image-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caixa de Conteúdo de Texto */
+.card-content-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem 3rem;
+}
+
+.card-content-box h3 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.75rem; /* ~28px */
+    font-weight: var(--fw-bold, 700);
+    color: #FFA800; /* Destaque laranja no título interno */
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+}
+
+.card-content-box p {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.125rem; /* ~18px */
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.95;
+}
+
+/* Tratamento específico para a lista com bullet points do quarto card */
+.card-content-box.text-bullet-list ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-content-box.text-bullet-list li {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.05rem;
+    color: #FFFFFF;
+    line-height: 1.4;
+    opacity: 0.95;
+}
