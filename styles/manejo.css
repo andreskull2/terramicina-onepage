@@ -43,20 +43,22 @@
     margin: 0 auto;
 }
 
-/* Estrutura Base de Cada Card Longo */
+/* Estrutura Base de Cada Card Longo (Imagem na Esquerda) */
 .management-card {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide o card em duas colunas perfeitas (Imagem / Texto) */
-    background-color: #1A202C; /* Tom escuro elegante padrão dos cards */
+    grid-template-columns: 1fr 1fr; 
+    background-color: var(--brown, #511700); 
+    background-image: linear-gradient(105deg, var(--brown, #511700) 70%, #000000 100%);
     border-radius: 16px;
     overflow: hidden;
     min-height: 240px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Inversão em zigue-zague para os cards pares (.reverse) */
+/* Inversão em zigue-zague para os cards pares (.reverse - Imagem na Direita) */
 .management-card.reverse {
     grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(-105deg, var(--brown, #511700) 70%, #000000 100%);
 }
 
 /* Caixa de Imagem do Card */
@@ -65,6 +67,7 @@
     height: 100%;
     overflow: hidden;
     position: relative;
+    background-color: var(--brown, #511700);
 }
 
 .card-image-box img {
@@ -72,6 +75,26 @@
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+/* --- Máscara de transparência para cards normais (imagem na esquerda) --- */
+.management-card .card-image-box img {
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+/* --- Máscara de transparência para cards reversos (.reverse - imagem na direita) --- */
+.management-card.reverse .card-image-box img {
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
 }
 
 /* Caixa de Conteúdo de Texto */
