@@ -2,7 +2,7 @@
     background-color: var(--white, #FFFFFF);
     width: 100%;
     display: block;
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
 }
 
 .footer-container {
@@ -60,7 +60,7 @@
     font-size: 1.125rem;
     font-weight: var(--fw-bold, 700);
     margin-bottom: 1.25rem;
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
 }
 
 .footer-col ul {
@@ -75,7 +75,7 @@
 .footer-col a {
     font-family: var(--ff-arimo, sans-serif);
     font-size: 0.95rem;
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
     text-decoration: none;
     opacity: 0.85;
     transition: opacity 0.3s ease;
