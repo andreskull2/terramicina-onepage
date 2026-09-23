@@ -11,7 +11,7 @@
 
 .header-container {
     width: 100%;
-    max-width: 1440px; /* Alterado de 1200px para 1440px */
+    max-width: 1440px; /* 1440px padrão */
     margin: 0 auto;
     padding: 1.2rem 100px; /* Exatamente 100px de padding lateral de cada lado */
     display: flex;
@@ -47,4 +47,33 @@
     color: var(--white, #FFFFFF);
     font-weight: var(--fw-regular, 400);
     transition: opacity 0.3s ease;
+}
+
+.nav-menu a:hover {
+    opacity: 0.8;
+}
+
+/* Estilo do Botão do Header (Desktop) */
+.header-cta {
+    display: flex;
+    align-items: center;
+}
+
+.btn-header {
+    background-color: var(--green-brand, #78A733);
+    color: var(--white, #FFFFFF);
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 0.95rem;
+    font-weight: var(--fw-bold, 700);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px; /* Formato pílula padrão do projeto */
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn-header:hover {
+    background-color: #658e2a;
+    transform: translate(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
