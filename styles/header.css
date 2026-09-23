@@ -77,3 +77,26 @@
     transform: translate(-1px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 1rem 40px;
+    }
+
+    .logo a {
+        font-size: 1.25rem;
+    }
+
+    .nav-menu ul {
+        gap: 1.8rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.95rem;
+    }
+
+    .btn-header {
+        font-size: 0.88rem;
+        padding: 0.5rem 1.2rem;
+    }
+}

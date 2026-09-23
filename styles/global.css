@@ -35,5 +35,11 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 74px; /* Compensa a altura do header fixo para qualquer âncora */
+    scroll-padding-top: 74px; /* Altura padrão para o desktop (1024px) */
+}
+
+@media (max-width: 1024px) {
+    html {
+        scroll-padding-top: 64px;
+    }
 }
