@@ -1,6 +1,6 @@
 .hero-section {
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--white, #FFFFFF);
     display: flex;
     justify-content: center; /* Centraliza a faixa de 1440px na tela se o monitor for maior */
     overflow: hidden;
