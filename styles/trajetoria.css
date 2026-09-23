@@ -1,5 +1,5 @@
 .trajetoria-section {
-    background-color: #ffffff;
+    background-color: var(--white, #FFFFFF);
     width: 100%;
     display: block;
     padding: 0;
@@ -11,7 +11,7 @@
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     gap: 4rem;
     padding-left: 100px; /* Encosta a imagem exatamente na linha guia esquerda */
@@ -23,6 +23,11 @@
     flex: 1;
     max-width: 520px;
     font-family: var(--ff-arimo, sans-serif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .trajetoria-content h2 {
@@ -30,7 +35,6 @@
     font-size: var(--fs-xxl, 2.5rem);
     font-weight: var(--fw-bold, 700);
     color: var(--white, #FFFFFF);
-    margin-bottom: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -51,11 +55,14 @@
     position: relative;
     flex: 1;
     max-width: 680px;
+    display: flex;
+    align-items: stretch;
 }
 
 .trajetoria-image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -68,6 +75,8 @@
     .trajetoria-content {
         max-width: 100%;
         text-align: center;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .trajetoria-image-wrapper {
         max-width: 100%;
