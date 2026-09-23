@@ -24,3 +24,9 @@
     height: auto;
     display: block;
 }
+
+@media (max-width: 1024px) {
+    .hero-container {
+        padding-top: 62px;
+    }
+}
