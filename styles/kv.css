@@ -1,0 +1,23 @@
+.kv-section {
+    background-color: var(--white, #FFFFFF);
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.kv-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.kv-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
