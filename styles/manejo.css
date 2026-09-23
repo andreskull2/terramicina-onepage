@@ -31,7 +31,7 @@
     font-family: var(--ff-arimo, sans-serif);
     font-size: 2.75rem; /* ~44px */
     font-weight: var(--fw-bold, 700);
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
 }
 
 /* Lista de Cards Compridos travada na mesma proporção mestra (80%) */
@@ -109,7 +109,7 @@
     font-family: var(--ff-arimo, sans-serif);
     font-size: 1.75rem; /* ~28px */
     font-weight: var(--fw-bold, 700);
-    color: #FFA800; /* Destaque laranja no título interno */
+    color: var(--orange, #FFA800); /* Destaque laranja no título interno */
     margin-bottom: 0.75rem;
     line-height: 1.2;
 }
@@ -117,7 +117,7 @@
 .card-content-box p {
     font-family: var(--ff-arimo, sans-serif);
     font-size: 1.125rem; /* ~18px */
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
     line-height: 1.5;
     margin: 0;
     opacity: 0.95;
@@ -136,7 +136,7 @@
 .card-content-box.text-bullet-list li {
     font-family: var(--ff-arimo, sans-serif);
     font-size: 1.05rem;
-    color: #FFFFFF;
+    color: var(--white, #FFFFFF);
     line-height: 1.4;
     opacity: 0.95;
 }
