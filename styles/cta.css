@@ -1,0 +1,93 @@
+.cta-section {
+    background-color: var(--white, #FFFFFF);
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.cta-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: var(--blue-brand, #293486);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-container h2 {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 2.75rem;
+    font-weight: var(--fw-bold, 700);
+    color: var(--orange, #FFA800);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.cta-subtitle {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.25rem;
+    font-weight: var(--fw-bold, 700);
+    color: var(--white, #FFFFFF);
+    margin-bottom: 3rem;
+    opacity: 0.95;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--green-brand, #7FB050);
+    color: var(--white, #FFFFFF);
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1.125rem;
+    font-weight: var(--fw-bold, 700);
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.btn-cta:hover {
+    background-color: #658e2a;
+    transform: translate(-2px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cta-footer-note {
+    font-family: var(--ff-arimo, sans-serif);
+    font-size: 1rem;
+    color: var(--white, #FFFFFF);
+    opacity: 0.8;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .cta-container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .cta-container h2 {
+        font-size: 2.125rem;
+    }
+    
+    .cta-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+}
