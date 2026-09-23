@@ -1,9 +1,8 @@
 /* A section tem que ter largura total da tela, sem limitar caixa nenhuma */
 .power-section {
-    background-color: #ffffff;
+    background-color: var(--white, #FFFFFF);
     width: 100%;
     display: block;
-    padding: 0 0;
     overflow: hidden;
 }
 
@@ -13,9 +12,11 @@
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: stretch; /* Estica os filhos */
     justify-content: space-between;
     gap: 4rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 0px; /* Encosta a imagem exatamente na linha guia esquerda */
     padding-right: 300px; /* Respiro direito */
     background-color: #edf3ff;
@@ -25,11 +26,14 @@
     position: relative;
     flex: 1;
     max-width: 580px;
+    display: flex;
+    align-items: stretch;
 }
 
 .power-image-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -54,6 +58,11 @@
     flex: 1;
     max-width: 500px;
     font-family: var(--ff-arimo, sans-serif);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .power-content h2 {

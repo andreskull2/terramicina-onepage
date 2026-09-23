@@ -31,3 +31,8 @@
     --fs-base: 1.125rem; /* 18px */
     --fs-sm: 1rem; /* 16px */
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 74px; /* Compensa a altura do header fixo para qualquer âncora */
+}
