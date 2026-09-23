@@ -104,11 +104,20 @@
 
 @media (max-width: 1024px) {
     .power-container {
-        flex-direction: column;
-        padding: 4rem 1.25rem;
+        flex-direction: row;
+        padding-left: 0px;
+        padding-right: 40px;
         gap: 2.5rem;
     }
+    .power-image-wrapper {
+        max-width: 48vw;
+    }
+    .power-content {
+        max-width: 100%;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
     .power-content h2 {
-        font-size: 2rem;
+        font-size: 2.1rem;
     }
 }
