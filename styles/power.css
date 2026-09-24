@@ -106,7 +106,7 @@
     .power-container {
         flex-direction: row;
         padding-left: 0px;
-        padding-right: 40px;
+        padding-right: 60px;
         gap: 2.5rem;
     }
     .power-image-wrapper {
