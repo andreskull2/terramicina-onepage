@@ -148,3 +148,52 @@
         font-size: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .indications-container {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 2rem;
+    }
+
+    .indications-header h2 {
+        font-size: 1.85rem;
+    }
+
+    .indications-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    /* Ajuste da altura para os cards empilhados */
+    .card-image-wrapper {
+        height: 240px;
+    }
+
+    .card-header-bar h3 {
+        font-size: 1.25rem;
+    }
+
+    .indication-list {
+        padding: 1.5rem;
+        gap: 0.85rem;
+    }
+
+    .indication-list li {
+        font-size: 0.95rem;
+    }
+
+    .indication-card:nth-child(1) .indication-bg {
+        object-fit: cover;
+        object-position: center top;
+    }
+
+    .indication-card:nth-child(2) .indication-bg {
+        object-fit: cover;
+        object-position: center center;
+    }
+}
