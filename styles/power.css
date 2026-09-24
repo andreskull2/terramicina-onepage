@@ -121,3 +121,48 @@
         font-size: 2.1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .power-container {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 0;
+        align-items: center;
+    }
+
+    .power-image-wrapper {
+        max-width: 100%;
+        width: 100%;
+        min-height: 320px;
+    }
+
+    .power-image-wrapper img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .power-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 2.5rem 1.5rem;
+        text-align: left;
+    }
+
+    .power-content h2 {
+        font-size: 1.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .power-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .badge-nova-embalagem {
+        top: 8%;
+        left: 5%;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.7rem;
+    }
+}
