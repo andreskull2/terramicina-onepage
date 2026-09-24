@@ -68,17 +68,20 @@
 
 @media (max-width: 1024px) {
     .trajetoria-container {
-        flex-direction: column-reverse;
-        padding: 4rem 1.25rem;
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 0px;
         gap: 2.5rem;
     }
     .trajetoria-content {
         max-width: 100%;
-        text-align: center;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
     .trajetoria-image-wrapper {
-        max-width: 100%;
+        max-width: 48vw;
+    }
+    .trajetoria-content h2 {
+        font-size: 2.1rem;
     }
 }
