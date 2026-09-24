@@ -58,29 +58,33 @@
 
 .authority-text p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: 1.125rem;
+    font-size: var(--fs-sm, 1rem);
     color: var(--white, #FFFFFF);
     line-height: 1.4;
     margin: 0;
 }
 
 @media (max-width: 1024px) {
-    .authority-bar {
-        padding: 3rem 0;
-    }
-
     .authority-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 1.25rem;
-        gap: 2.5rem;
+        flex-direction: row;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 2rem;
     }
-
+    .authority-item {
+        gap: 1rem;
+    }
+    .authority-icon {
+        width: 55px;
+        height: 55px;
+    }
     .authority-text h3 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .authority-text p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 }
