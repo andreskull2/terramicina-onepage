@@ -91,3 +91,21 @@
         margin-bottom: 2rem;
     }
 }
+
+@media (max-width: 1024px) {
+    .cta-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .cta-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .cta-subtitle {
+        font-size: 1.125rem;
+        margin-bottom: 2.5rem;
+    }
+}
