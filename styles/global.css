@@ -43,3 +43,9 @@ html {
         scroll-padding-top: 64px;
     }
 }
+
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 55px;
+    }
+}
