@@ -80,3 +80,42 @@
         font-size: 2.1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .tradicao-container {
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap: 0;
+        align-items: center;
+    }
+
+    .tradicao-image-wrapper {
+        max-width: 100%;
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .tradicao-image-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .tradicao-content {
+        max-width: 100%;
+        width: 100%;
+        padding: 4.5rem 4.5rem;
+        text-align: left;
+    }
+
+    .tradicao-content h2 {
+        font-size: 1.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .tradicao-content p {
+        font-size: 0.95rem;
+    }
+}
