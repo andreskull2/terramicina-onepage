@@ -18,7 +18,8 @@
     align-items: center;
 }
 
-.hero-container img {
+.hero-container img,
+.hero-container picture {
     width: 100%;
     max-width: 100%; /* Garante que ela respeite o limite exato do container sem vazar */
     height: auto;
@@ -28,5 +29,11 @@
 @media (max-width: 1024px) {
     .hero-container {
         padding-top: 62px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container {
+        padding-top: 56px;
     }
 }
