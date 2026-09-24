@@ -233,8 +233,8 @@
 
 @media (max-width: 768px) {
     .video-container {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
         gap: 2rem;
