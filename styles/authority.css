@@ -88,3 +88,37 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 768px) {
+    .authority-container {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 2.5rem;
+        align-items: center;
+    }
+
+    .authority-item {
+        width: 100%;
+        max-width: 450px;
+        gap: 1.25rem;
+        text-align: left;
+    }
+
+    .authority-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .authority-text {
+        font-size: 1.65rem;
+        line-height: 1.2;
+        margin-bottom: 0.25rem;
+    }
+
+    .authority-text p {
+        font-size: 0.95rem;
+    }
+}
