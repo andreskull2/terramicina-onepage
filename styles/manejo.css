@@ -116,7 +116,7 @@
 
 .card-content-box p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: 1.125rem; /* ~18px */
+    font-size: var(--fs-sm, 1rem); /* 16px */
     color: var(--white, #FFFFFF);
     line-height: 1.5;
     margin: 0;
@@ -139,4 +139,36 @@
     color: var(--white, #FFFFFF);
     line-height: 1.4;
     opacity: 0.95;
+}
+
+@media (max-width: 1024px) {
+    .management-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+        gap: 2.5rem;
+    }
+
+    .management-header h2 {
+        font-size: 2.25rem;
+    }
+
+    .management-list {
+        width: 100%;
+        gap: 1.75rem;
+    }
+
+    .card-content-box {
+        padding: 2rem 2.25rem;
+    }
+
+    .card-content-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-content-box p,
+    .card-content-box.text-bullet-list li {
+        font-size: 0.95rem;
+    }
 }
