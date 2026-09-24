@@ -113,3 +113,38 @@
     font-weight: bold;
     font-size: 1.25rem;
 }
+
+@media (max-width: 1024px) {
+    .indications-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 4.5rem;
+        padding-bottom: 4.5rem;
+        gap: 2.5rem;
+    }
+
+    .indications-header h2 {
+        font-size: 2.25rem;
+    }
+
+    .indications-grid {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .card-image-wrapper {
+        height: 240px;
+    }
+
+    .card-header-bar h3 {
+        font-size: 1.35rem;
+    }
+
+    .indication-list {
+        padding: 1.5rem;
+    }
+
+    .indication-list li {
+        font-size: 1rem;
+    }
+}
