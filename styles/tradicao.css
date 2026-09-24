@@ -62,17 +62,21 @@
 
 @media (max-width: 1024px) {
     .tradicao-container {
-        flex-direction: column;
-        padding: 4rem 1.25rem;
+        flex-direction: row;
+        padding-left: 0px;
+        padding-right: 40px;
         gap: 2.5rem;
+    }
+    .tradicao-image-wrapper {
+        max-width: 48vw;
     }
     .tradicao-content {
         max-width: 100%;
-        text-align: center;
-        padding-top: 0;
-        padding-bottom: 0;
+        text-align: left;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
     }
-    .tradicao-image-wrapper {
-        max-width: 100%;
+    .tradicao-content h2 {
+        font-size: 2.1rem;
     }
 }
