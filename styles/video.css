@@ -230,3 +230,61 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 768px) {
+    .video-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 2rem;
+    }
+
+    .video-header h2 {
+        font-size: 1.85rem;
+    }
+
+    .video-header p {
+        font-size: 1rem;
+    }
+
+    /* Vídeo principal ocupa 100% da largura útil com altura proporcional */
+    .main-video {
+        width: 100%;
+        max-width: 100%;
+        height: 260px;
+    }
+
+    .main-video .play-button img,
+    .main-video .play-button svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .video-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .secondary-video {
+        width: 100%;
+        height: 280px;
+        padding: 1.75rem;
+    }
+
+    .secondary-video .play-button img,
+    .secondary-video .play-button svg {
+        width: 44px;
+        height: 44px;
+    }
+
+    .secondary-video .video-card-content h3 {
+        font-size: 1.35rem;
+    }
+
+    .secondary-video .video-card-content p {
+        font-size: 0.9rem;
+    }
+}
