@@ -29,3 +29,17 @@
         padding-right: 0px;
     }
 }
+
+@media (max-width: 768px) {
+    .kv-container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .kv-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
