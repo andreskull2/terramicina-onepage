@@ -107,7 +107,7 @@
 
 @media (max-width: 768px) {
     .header-container {
-        padding: 0.85rem 20px;
+        padding: 0.85rem 3rem;
     }
 
     .logo a {
