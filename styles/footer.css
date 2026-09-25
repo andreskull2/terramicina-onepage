@@ -131,16 +131,29 @@
     .footer-top {
         grid-template-columns: 1fr;
         gap: 3rem;
+        text-align: center;
     }
 
     .footer-brand {
         max-width: 100%;
+        align-items: center;
     }
 
     .footer-nav-columns {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-        justify-self: start;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col ul {
+        align-items: center;
     }
 }
 

@@ -143,8 +143,8 @@
 
 @media (max-width: 1024px) {
     .management-container {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 4rem;
+        padding-right: 4rem;
         padding-top: 4.5rem;
         padding-bottom: 4.5rem;
         gap: 2.5rem;
