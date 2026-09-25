@@ -172,3 +172,59 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 768px) {
+    .management-container {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 2rem;
+    }
+
+    .management-header h2 {
+        font-size: 1.85rem;
+    }
+
+    .management-list {
+        width: 100%;
+        gap: 1.5rem;
+    }
+
+    .management-card,
+    .management-card.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .management-card.reverse .card-image-box {
+        order: 1;
+    }
+
+    .management-card.reverse .card-content-box {
+        order: 2;
+    }
+
+    .card-image-box {
+        height: 220px;
+    }
+
+    .management-card .card-image-box img,
+    .management-card.reverse .card-image-box img {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .card-content-box {
+        padding: 3rem 2.5rem;
+    }
+
+    .card-content-box h3 {
+        font-size: 1.35rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-content-box p,
+    .card-content-box.text-bullet-list li {
+        font-size: 0.95rem;
+    }
+}
