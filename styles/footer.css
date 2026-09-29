@@ -213,3 +213,58 @@
         font-size: 0.8rem;
     }
 }
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer-top {
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        max-width: 125px;
+    }
+
+    .footer-brand p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    .footer-nav-columns {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .footer-col h4 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-col ul {
+        gap: 0.5rem;
+    }
+
+    .footer-col a {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        gap: 0.4rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.775rem;
+        line-height: 1.35;
+    }
+
+    .footer-bottom .copyright {
+        font-size: 0.775rem;
+        margin-top: 0.25rem;
+    }
+
+}
