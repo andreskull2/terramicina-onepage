@@ -114,3 +114,35 @@
         font-size: 0.9rem;
     }
 }
+
+@media (max-width: 480px) {
+    .cta-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .cta-container h2 {
+        font-size: 1.55rem;
+        line-height: 1.2;
+        margin-bottom: 0.75rem;
+    }
+
+    .cta-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .btn-cta {
+        width: 100%;
+        max-width: 280px;
+        padding: 0.875rem 1.25rem;
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .cta-footer-note {
+        font-size: 0.825rem;
+    }
+}
