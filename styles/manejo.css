@@ -205,17 +205,17 @@
     }
 
     .card-image-box {
-        height: 220px;
+        height: 200px;
     }
 
     .management-card .card-image-box img,
     .management-card.reverse .card-image-box img {
-        -webkit-mask-image: none;
-        mask-image: none;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
     }
 
     .card-content-box {
-        padding: 3rem 2.5rem;
+        padding: 2rem 1.75rem;
     }
 
     .card-content-box h3 {
@@ -226,5 +226,39 @@
     .card-content-box p,
     .card-content-box.text-bullet-list li {
         font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .management-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        gap: 1.75rem;
+    }
+
+    .management-header h2 {
+        font-size: 1.55rem;
+        line-height: 1.2;
+    }
+
+    .card-image-box {
+        height: 175px;
+    }
+
+    .card-content-box {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .card-content-box h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .card-content-box p,
+    .card-content-box.text-bullet-list li {
+        font-size: 0.875rem;
+        line-height: 1.4;
     }
 }
