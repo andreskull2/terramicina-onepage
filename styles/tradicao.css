@@ -120,25 +120,23 @@
     }
 }
 
-/* Ajuste cirúrgico para telas menores (320px a 375px) */
 @media (max-width: 480px) {
     .tradicao-image-wrapper {
-        max-width: 100%;
         width: 100%;
-        min-height: 200px;
+        height: auto; /* Deixa fluido */
     }
 
     .tradicao-image-wrapper img {
         width: 100%;
-        height: 100%;
+        aspect-ratio: 4 / 3; /* Ou a proporção real da sua foto horizontal (ex: 16/9) */
         object-fit: cover;
-        object-position: center;
+        display: block;
     }
 
+    /* Encolhe o padding superior para o texto colar logo abaixo da foto */
     .tradicao-content {
-        max-width: 100%;
         width: 100%;
-        padding: 1.25rem 1rem 2rem 1rem;
+        padding: 2rem 2rem 2rem 2rem; /* Padding de topo bem menor (1.5rem) */
         text-align: left;
     }
 
