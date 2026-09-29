@@ -135,18 +135,20 @@
     .power-image-wrapper {
         max-width: 100%;
         width: 100%;
-        min-height: 320px;
+        min-height: 280px;
     }
 
     .power-image-wrapper img {
         object-fit: cover;
         object-position: center;
+        width: 100%;
+        height: 100%;
     }
 
     .power-content {
         max-width: 100%;
         width: 100%;
-        padding: 4.5rem 4.5rem;
+        padding: 3rem 4.5rem;
         text-align: left;
     }
 
@@ -157,7 +159,13 @@
 
     .power-content p {
         font-size: 0.95rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+        padding: 0.85rem 1.5rem;
     }
 
     .badge-nova-embalagem {
@@ -165,5 +173,16 @@
         left: 5%;
         font-size: 0.75rem;
         padding: 0.3rem 0.7rem;
+    }
+}
+
+/* Ajuste cirúrgico extra para telas menores (iPhone SE / 320px a 375px) */
+@media (max-width: 480px) {
+    .power-content {
+        padding: 2.5rem 1.25rem;
+    }
+
+    .power-content h2 {
+        font-size: 1.65rem;
     }
 }
