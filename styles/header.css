@@ -1,6 +1,6 @@
 .site-header {
     width: 100%;
-    background-color: var(--blue-brand, #0856B6);
+    background-color: var(--blue, #0856B6);
     position: fixed;
     top: 0;
     left: 0;
