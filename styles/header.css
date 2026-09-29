@@ -78,6 +78,15 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* Por padrão (desktop), o texto do mobile some */
+.btn-header .text-mobile {
+    display: none;
+} 
+
+.btn-header .text-desktop {
+    display: inline;
+}
+
 @media (max-width: 1024px) {
     .header-container {
         padding: 1rem 4.5rem;
@@ -118,4 +127,49 @@
         font-size: 0.8rem;
         padding: 0.45rem 1rem;
     }
+}
+
+@media (max-width: 480px) {
+    /* Transforma o header estático (some ao rolar) apenas no celular */
+    .site-header {
+        position: relative;
+        width: 100%;
+    }
+
+    /* Reduz o padding lateral para ganhar respiro crítico nas pontas */
+    .header-container {
+        padding:  0.6rem 0.75rem;
+        width: 100%;
+        gap: 0.5rem; /* Garante espaçamento seguro entre logo e botão */
+    }
+
+    /* Ajuste fino na logop para não quebrar em telas de 320px */
+    .logo a {
+        font-size: 0.95rem;
+    }
+
+    .logo sup {
+        font-size: 0.6rem;
+    }
+
+    /* Garante que o menu hamburguer/desktop continue oculto */
+    .nav-menu {
+        display: none;
+    }
+
+    /* Botão de CTA compacto e confortável para o toque */
+    .btn-header {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        white-space: nowrap;
+    }
+
+    .btn-header .text-desktop {
+        display: none;
+    }
+
+    .btn-header .text-mobile {
+        display: inline;
+    }
+
 }
