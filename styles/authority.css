@@ -122,3 +122,37 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 480px) {
+    .authority-container {
+        flex-direction: column;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .authority-item {
+        width: 100%;
+        max-width: 100%;
+        gap: 1rem;
+        text-align: left;
+    }
+
+    .authority-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .authority-text h3 {
+        font-size: 1.35rem;
+        line-height: 1.2;
+        margin-bottom: 0.25rem;
+    }
+
+    .authority-text p {
+        font-size: 0.875rem;
+    }
+}
