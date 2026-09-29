@@ -37,9 +37,13 @@
     <section class="hero-section">
         <div class="hero-container">
             <picture>
-                <!-- Versão para mobile / tablet portrait (<= 768px) -->
+                <!-- Versão estritamente mobile (<= 480px) -->
+                 <source media="(max-width: 480px)" srcset="assets/img/img-hero-480px.webp">
+
+                <!-- Versão para tablet / telas intermediárias (<= 768px) -->
                 <source media="(max-width: 768px)" srcset="assets/img/img-hero-768.webp">
-                <!-- Versão padrão para desktop e telas maiores --> 
+
+                <!-- Versão padrão para desktop e telas maiores (fallback) --> 
                 <img src="assets/img/img-hero.webp" alt="Terramicina Pó Solúvel - A história continua">
             </picture>
         </div>

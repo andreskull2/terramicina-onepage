@@ -37,3 +37,11 @@
         padding-top: 56px;
     }
 }
+
+@media (max-width: 480px) {
+    .hero-container {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
