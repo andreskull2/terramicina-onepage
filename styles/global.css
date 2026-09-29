@@ -36,6 +36,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 74px; /* Altura padrão para o desktop (1024px) */
+    overscroll-behavior: none;
 }
 
 @media (max-width: 1024px) {
