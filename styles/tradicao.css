@@ -32,6 +32,9 @@
     height: auto;
     object-fit: cover;
     display: block;
+    /* Aplica o fade de 25% na lateral direita (começa a desvanecer aos 75% e zera em 100%) */
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%);
 }
 
 .tradicao-content {
@@ -101,6 +104,9 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        /* Remove o fade no mobile para a imagem ficar inteira */
+        -webkit-mask-image: none;
+        mask-image: none;
     }
 
     .tradicao-content {
