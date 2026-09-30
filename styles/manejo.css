@@ -194,6 +194,9 @@
     .management-card,
     .management-card.reverse {
         grid-template-columns: 1fr;
+        /* Transforma o fundo diagonal em vertical no mobile,
+        mantendo 85% de marrom predominante e escurecendo só nas 15% finais da base */
+        background-image: linear-gradient(to bottom, var(--brown, #511700) 70%, #000000 100%);
     }
 
     .management-card.reverse .card-image-box {
