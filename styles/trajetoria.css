@@ -64,6 +64,9 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    /* Começa transparente na ponta esquerda (0%) e fica sólida a 25% */
+    -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 25%);
 }
 
 @media (max-width: 1024px) {
@@ -116,6 +119,9 @@
         height: 100%;
         object-fit: cover;
         object-position: center;
+        /* Remove o fade no mobile para a imagem ficar inteira */
+        -webkit-mask-image: none;
+        mask-image: none;
     }
 
     .trajetoria-content h2 {
