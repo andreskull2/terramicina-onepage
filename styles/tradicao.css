@@ -58,7 +58,7 @@
 
 .tradicao-content p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: var(--fs-sm, 1rem);
+    font-size: var(--fs-base, 1.125rem);
     color: var(--white, #FFFFFF);
     line-height: 1.6;
 }

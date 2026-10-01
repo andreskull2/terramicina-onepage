@@ -116,7 +116,7 @@
 
 .card-content-box p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: var(--fs-sm, 1rem); /* 16px */
+    font-size: var(--fs-base, 1.125rem); /* 18px */
     color: var(--white, #FFFFFF);
     line-height: 1.5;
     margin: 0;

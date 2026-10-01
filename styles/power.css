@@ -79,7 +79,7 @@
 
 .power-content p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: var(--fs-sm, 1rem);
+    font-size: var(--fs-base, 1.125rem);
     color: var(--blue, #0856B6);
     line-height: 1.6;
     margin-bottom: 2rem;
