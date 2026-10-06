@@ -112,6 +112,11 @@
     opacity: 0.95;
 }
 
+.trajetoria-content p.highlight-text sup {
+    font-size: 0.65rem; 
+    vertical-align: super;
+}
+
 @media (max-width: 1024px) {
     .trajetoria-container {
         flex-direction: row;
@@ -233,5 +238,9 @@
         object-fit: cover;
         object-position: center;
         display: block;
+    }
+
+      .trajetoria-content p.highlight-text sup {
+        font-size: 0.5rem;
     }
 }
