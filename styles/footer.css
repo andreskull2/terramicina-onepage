@@ -113,6 +113,12 @@
     line-height: 1.4;
 }
 
+.footer-bottom p sup {
+    font-size: 0.45rem; 
+    vertical-align: super;
+    line-height: 0;
+}
+
 .footer-bottom .copyright {
     margin-top: 0.5rem;
     opacity: 0.95;
@@ -265,6 +271,12 @@
     .footer-bottom .copyright {
         font-size: 0.775rem;
         margin-top: 0.25rem;
+    }
+
+    .footer-bottom p sup {
+        font-size: 0.4rem; 
+        vertical-align: super;
+        line-height: 0;
     }
 
 }
