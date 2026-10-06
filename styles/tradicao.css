@@ -63,6 +63,11 @@
     line-height: 1.6;
 }
 
+.tradicao-content p sup {
+    font-size: 0.65rem; 
+    vertical-align: super;
+}
+
 /* Item de destaque/autoridade integrado na Seção Tradição */
 .tradicao-feature-item {
     display: flex;
@@ -97,9 +102,14 @@
     margin-bottom: 0.2rem;
 }
 
+.tradicao-feature-text h3 sup {
+    font-size: 0.65rem; 
+    vertical-align: super;
+}
+
 .tradicao-feature-text p {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: 0.95rem;
+    font-size: var(--fs-base, 1.125rem);
     color: var(--white, #FFFFFF);
     line-height: 1.4;
     margin: 0;
@@ -214,5 +224,13 @@
 
     .tradicao-content p {
         font-size: 0.9rem;
+    }
+
+    .tradicao-content  p sup {
+        font-size: 0.5rem;
+    }
+
+    .tradicao-feature-text h3 sup {
+        font-size: 0.5rem;
     }
 }
