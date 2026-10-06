@@ -44,6 +44,11 @@
     line-height: 1.5;
 }
 
+.video-header p sup {
+    font-size: 0.65rem; 
+    vertical-align: super;
+}
+
 /* Base comum para os cards de vídeo */
 .video-card {
     position: relative;
@@ -306,6 +311,10 @@
     .video-header p {
         font-size: 0.925rem;
         line-height: 1.4;
+    }
+
+    .video-header p sup {
+        font-size: 0.5rem; 
     }
 
     .main-video {
