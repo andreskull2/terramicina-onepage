@@ -85,6 +85,11 @@
     margin-bottom: 2rem;
 }
 
+.power-content p sup {
+    font-size: 0.65rem; 
+    vertical-align: super;
+}
+
 .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -211,5 +216,9 @@
 
     .power-content p {
         font-size: 0.9rem;
+    }
+
+    .power-content p sup {
+        font-size: 0.5rem;
     }
 }
