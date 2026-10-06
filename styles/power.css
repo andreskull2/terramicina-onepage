@@ -169,7 +169,7 @@
     }
 
     .power-content p {
-        font-size: 0.95rem;
+        font-size: var(--fs-base, 1.125rem);
         margin-bottom: 1.75rem;
     }
 
