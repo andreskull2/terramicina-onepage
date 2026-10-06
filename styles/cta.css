@@ -22,11 +22,16 @@
 
 .cta-container h2 {
     font-family: var(--ff-arimo, sans-serif);
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     font-weight: var(--fw-bold, 700);
     color: var(--orange, #FFA800);
     margin-bottom: 1rem;
     line-height: 1.2;
+}
+
+.cta-container h2 sup {
+    font-size: 0.95rem; 
+    vertical-align: super;
 }
 
 .cta-subtitle {
